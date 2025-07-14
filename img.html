@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain View Home Page</title>
+    <style>
+        /* Minimal Styling for the Mountain View Home Page */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures footer sticks to bottom */
+        }
+        header {
+            background: #2c3e50; /* Dark blue/grey */
+            color: #ecf0f1; /* Light grey */
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            background: #34495e; /* Slightly lighter dark blue/grey */
+            margin: 0;
+        }
+        nav ul li {
+            display: inline-block; /* For horizontal navigation */
+            margin: 0;
+        }
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 15px 25px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #e74c3c; /* Red */
+        }
+        main {
+            flex-grow: 1; /* Allows main content to take available space */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+        .image-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            max-width: 900px; /* Max width for the container */
+            width: 100%;
+            overflow: hidden; /* Ensures image doesn't overflow rounded corners */
+            text-align: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            display: block; /* Removes extra space below image */
+            margin: 0 auto; /* Centers image if it's smaller than max-width */
+            border-bottom: 1px solid #eee; /* Separator for image and text */
+        }
+        .image-description {
+            padding: 20px;
+            color: #555;
+            font-size: 1.1em;
+        }
+        .image-description p {
+            margin: 0; /* Remove default paragraph margins */
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: #ecf0f1;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+            margin-top: auto; /* Pushes footer to the bottom */
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block; /* Stack nav items on small screens */
+            }
+            main {
+                padding: 15px;
+            }
+            .image-description {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>A Glimpse of Nature's Grandeur</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfcalvstqIVIyvQg_YiquD9OyI7Srto662vg&s" alt="A majestic mountain peak under a clear sky.">
+            <div class="image-description">
+                <p>A towering mountain stands majestically, its peak reaching towards the sky.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mountain Views. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
